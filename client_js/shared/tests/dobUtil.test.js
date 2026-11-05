@@ -363,6 +363,21 @@ describe('getNormalizedDOB', () => {
       });
     });
 
+    it('should return null for impossible calendar dates', () => {
+      const testCases = [
+        '02-31-1999', // Feb 31 (MM-DD-YYYY)
+        '31-02-1999', // Feb 31 (DD-MM-YYYY)
+        '1999-02-31', // Feb 31 (YYYY-MM-DD)
+        '04-31-1990', // April has 30 days
+        '02-29-2023', // Feb 29 in a non-leap year
+        '1900-02-29', // 1900 is not a leap year
+      ];
+
+      testCases.forEach((input) => {
+        expect(getNormalizedDOB(input)).toBeNull();
+      });
+    });
+
     it('should handle leap year dates', () => {
       const testCases = [
         {
