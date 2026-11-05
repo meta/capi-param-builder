@@ -817,7 +817,7 @@ describe('getNormalizedDOB', () => {
                 },
                 {
                     input: '02-29-1900', // Not a leap year (century year not divisible by 400)
-                    expected: '19000229',
+                    expected: null,
                 },
                 {
                     input: '02-29-2004', // Leap year

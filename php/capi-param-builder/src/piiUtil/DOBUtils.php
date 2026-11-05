@@ -23,10 +23,7 @@ class DOBUtils
     if ($month < 1 || $month > 12) {
       return false;
     }
-    if ($day < 1 || $day > 31) {
-      return false;
-    }
-    return true;
+    return checkdate($month, $day, $year);
   }
 
   // Helper: Replace all non-digit characters with spaces

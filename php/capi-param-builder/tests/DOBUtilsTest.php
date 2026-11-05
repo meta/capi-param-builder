@@ -279,9 +279,8 @@ final class DOBUtilsTest extends TestCase
   public function testGetNormalizedDOBWithFebruary29NonLeapYear()
   {
     $dob = '29/02/1900'; // Not a leap year (divisible by 100 but not 400)
-    $expected = '19000229';
     $result = DOBUtils::getNormalizedDOB($dob);
-    $this->assertEquals($expected, $result); // DOBUtils doesn't validate actual calendar dates
+    $this->assertNull($result);
   }
 
   public function testGetNormalizedDOBWithExtraWhitespace()

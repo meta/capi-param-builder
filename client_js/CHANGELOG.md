@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+- DOB normalization drops impossible calendar dates (for example `02-31-1999` or `02-29-2023`) instead of normalizing them; the day must exist in the given month and year.
+
 ## Version v1.3.3
 
 - Fixed `window.clientParamBuilder` being left `undefined` when an AMD loader (e.g. RequireJS) is present on the page. The webpack UMD build now assigns the global and registers an AMD module that returns that same instance, so `<script src="...">` inclusion works whether or not an AMD loader is on the page.

@@ -107,10 +107,8 @@ describe('Public Node Param Builder DOB contracts', () => {
     expect(normalize('00-00-0000')).toBeNull();
   });
 
-  test('characterizes day-range leniency without requiring a calendar date', () => {
-    expect(normalize('02-31-1999')).toBe(
-      'e373690e6985ab2e5d54ce90069d27753a98bcad09cbb18f3aca32c48107a1a2.' + NET_NEW
-    );
+  test('drops an impossible calendar date instead of hashing it', () => {
+    expect(normalize('02-31-1999')).toBeNull();
   });
 
   test('returns null silently for guarded non-string and empty inputs', () => {

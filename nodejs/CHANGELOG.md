@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+- DOB normalization drops impossible calendar dates (for example `02-31-1999` or `02-29-2023`) instead of normalizing them; the day must exist in the given month and year.
+
 ## v1.3.2
 
 - Recover client IP addresses from `_fbi` cookies containing repeated appendix values.

@@ -21,8 +21,12 @@ function isValidDate(year, month, day) {
         return false;
     }
 
-    // Check if day is valid for the given month and year
-    if (day < 1 || day > 31) {
+    // Check if day is valid for the given month and year. Day 0 of the
+    // following month is the last day of this one, which covers short
+    // months and leap years; the year guard above keeps the Date
+    // constructor away from its two-digit-year remapping.
+    const daysInMonth = new Date(year, month, 0).getDate();
+    if (day < 1 || day > daysInMonth) {
         return false;
     }
 
