@@ -1548,9 +1548,9 @@ balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
 
-baseline-browser-mapping@^2.9.0:
-  version "2.10.0"
-  resolved "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.10.0.tgz"
+baseline-browser-mapping@^2.11.33:
+  version "2.11.35"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.11.35.tgz#3ca6f40d1c594ab494d8a21b05d5316528a41563"
 
 brace-expansion@^1.1.7:
   version "1.1.12"
@@ -1566,14 +1566,14 @@ braces@^3.0.3:
     fill-range "^7.1.1"
 
 browserslist@^4.24.0, browserslist@^4.28.1:
-  version "4.28.1"
-  resolved "https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz"
+  version "4.29.5"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.29.5.tgz#e835ff9a00f683305b33f02828c908b397410d4a"
   dependencies:
-    baseline-browser-mapping "^2.9.0"
-    caniuse-lite "^1.0.30001759"
-    electron-to-chromium "^1.5.263"
-    node-releases "^2.0.27"
-    update-browserslist-db "^1.2.0"
+    baseline-browser-mapping "^2.11.33"
+    caniuse-lite "^1.0.30001819"
+    electron-to-chromium "^1.5.464"
+    node-releases "^2.0.60"
+    update-browserslist-db "^1.3.4"
 
 bser@2.1.1:
   version "2.1.1"
@@ -1604,9 +1604,9 @@ camelcase@^6.2.0:
   version "6.3.0"
   resolved "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
 
-caniuse-lite@^1.0.30001759:
-  version "1.0.30001770"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001770.tgz"
+caniuse-lite@^1.0.30001819:
+  version "1.0.30001822"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001822.tgz#8fb8d945f5c89b1701f4360745144e3fe2ee7a7a"
 
 chalk@^4.0.0:
   version "4.1.2"
@@ -1801,9 +1801,9 @@ dunder-proto@^1.0.1:
     es-errors "^1.3.0"
     gopd "^1.2.0"
 
-electron-to-chromium@^1.5.263:
-  version "1.5.286"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.286.tgz"
+electron-to-chromium@^1.5.464:
+  version "1.5.477"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.477.tgz#b5f39de72d9b60ac8e06a3f83ba08c7c33d582d9"
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -2978,9 +2978,9 @@ node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz"
 
-node-releases@^2.0.27:
-  version "2.0.27"
-  resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.27.tgz"
+node-releases@^2.0.60:
+  version "2.0.63"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.63.tgz#ad6035ec7745f8bc3b14f6500cd70d5545634612"
 
 normalize-path@^3.0.0:
   version "3.0.0"
@@ -3521,9 +3521,9 @@ universalify@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/universalify/-/universalify-0.2.0.tgz"
 
-update-browserslist-db@^1.2.0:
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz"
+update-browserslist-db@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.3.4.tgz#e8bd4596f6900805f9f12c5a5200c83c59c38faf"
   dependencies:
     escalade "^3.2.0"
     picocolors "^1.1.1"
